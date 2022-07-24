@@ -9,10 +9,12 @@ button {
     border-radius: 15px;
     margin: 5px;
     cursor: pointer;
+    transition: box-shadow 0.3s ease;
 }
 
 button:hover {
     background-color: #00471b;
+    box-shadow: 0 0.1rem 0.7rem rgba(0, 0, 0, 0.813);
 }
 
 .boton-clic {

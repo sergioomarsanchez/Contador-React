@@ -9,6 +9,8 @@ function App() {
 
 const [numClics, setNumClics] = useState(0);
 
+
+
 const manejarClic = ()=> {
 setNumClics(numClics + 1);
 }
@@ -18,14 +20,17 @@ setNumClics(0);
 }
 
   return (
+  
+    
+    
     <div className="App">
-     <div className='logo'>
-       <img 
+      <img 
        className='logo-imagen'
        src={logoSergio}
        alt='Logo de Sergio'/>
+     <div className='logo'>
      </div>
-     <div className='contenedor-contador'>
+     <div id={ numClics>10? 'background-green' : null } className='contenedor-contador'>
        <Contador numClics={numClics} />
       <Boton
       texto='Clic'
